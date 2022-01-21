@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+  <mapper namespace="com.java.member.dao.mapper.MemberMapper">
+  
+  	<insert id="memberInsert"  parameterType="com.java.member.dto.MemberDto" >
+  		INSERT INTO Member VALUES(#{Mid},#{Mpassword},#{Mname},#{Mpostalcode},#{Maddress},#{Mresidentnumber1},#{Mresidentnumber2},#{Mcallnumber1},#{Mcallnumber2},#{Mcallnumber3},#{Memail});
+  	</insert>
+  	
+  	<insert id="memberSelect"  parameterType="com.java.member.dto.MemberDto" >
+  		SELECT INTO Member VALUES(#{Mid},#{Mpassword},#{Mname},#{Mpostalcode},#{Maddress},#{Mresidentnumber1},#{Mresidentnumber2},#{Mcallnumber1},#{Mcallnumber2},#{Mcallnumber3},#{Memail});
+  	</insert>
+  	
+  	<insert id="memberDelete"  parameterType="com.java.member.dto.MemberDto" >
+  		DELETE INTO Member VALUES(#{Mid},#{Mpassword},#{Mname},#{Mpostalcode},#{Maddress},#{Mresidentnumber1},#{Mresidentnumber2},#{Mcallnumber1},#{Mcallnumber2},#{Mcallnumber3},#{Memail});
+  	</insert>
+  </mapper>   		
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
